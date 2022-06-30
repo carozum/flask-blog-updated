@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Flask",
+    "subtitle": "Flask is a web framework for Python developers",
+    "body": "If you need further information on Flask, you just have to look at the documentation that is really very clear and complete. There is a quickstart option that is very useful.  Same for jinja, the official documentation is a bible of everything that can be made or not with jinja. If by chance you keep stucked, you can rely on google as your best friend and stackoverflow for the quality and diversity of the answers. ",
+    "author": "Carozum",
+    "date": "25/06/2022"
+  },
+  {
+    "id": 2,
+    "title": "Jinja",
+    "subtitle": "Jinja is a templating language created for Python",
+    "body": "An html file can be a template if we are using jinja inside and especially {{ }} are used to specify which parts should actually be evaluated as Python code. When we are working with something that needs an import (for example, import random, it is best to write our code inside our python flask server (server.py). For multiline statement (if statement or for loop), we use {%    %}.",
+    "author": "Carozum",
+    "date": "26/06/2022"
+  },
+  {
+    "id": 3,
+    "title": "Virtual environment in Python",
+    "subtitle": "Learn the command line for virtual environment.",
+    "body": "First, to create a virtual environment, open a terminal in your project folder : python3 -m venv .venv. Then to activate : source .venv/bin/activate. To deactivate, simply : deactivate in the terminal.",
+    "author": "Carozum",
+    "date": "24/06/2022"
+  },
+  {
+    "id": 4,
+    "title": "Bootstrap",
+    "subtitle": "Front end library to render beautiful designs",
+    "body": "Responsive adaptable layout on mobile and desktop. Important number of pre-styled elements (jumbotron). Open source, you can find the source code on gitHub. Easy to use. You can download the source code on https://getbootstrap.com/docs/5.1/getting-started/introduction/. You also can find interesting examples after downloading the files... go to docs>v5.1.3>examples",
+    "author": "Carozum",
+    "date": "27/06/2022"
+  },
+   {
+    "id": 5,
+    "title": "Helpful websites",
+    "subtitle": "A list of helpful websites to design your app",
+    "body": "For example : https://css3buttongenerator.com/ ",
+    "author": "Carozum",
+    "date": "28/06/2022"
+  },
+]

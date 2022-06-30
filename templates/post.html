@@ -1,0 +1,42 @@
+{% include 'header.html' %}
+<!-- Page Header-->
+
+{% for post in all_posts: %} {% if post.id == post_id: %}
+<header
+  class="masthead"
+  style="background-image: url('{{ url_for('static', filename = '/img/post-bg.png')}}')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-heading">
+          <h1>{{ post.title}}</h1>
+          <h2 class="subheading">{{ post.subtitle}}</h2>
+<h3></h3>
+          <span class="meta">
+            Posted by
+            <a href="#!">{{ post.author}}</a>
+            on {{ post.date }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Post Content-->
+<article class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <!--                 
+                <h2 class="section-heading">The Final Frontier</h2> -->
+        <!-- <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality ten.</blockquote>
+                <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
+                <span class="caption text-muted">To go places and do things that have never been done before – that’s
+                    what living is all about.</span> -->
+        <p>{{ post.body}}</p>
+      </div>
+    </div>
+  </div>
+</article>
+{% endif %} {% endfor %} {% include 'footer.html' %}
