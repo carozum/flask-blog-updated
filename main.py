@@ -11,8 +11,12 @@ all_posts = blog_response.json()
 app = Flask(__name__)
 
 @app.route('/')
+def get_home():
+    return render_template('index.html')
+
+@app.route('/blog')
 def get_blog():    
-    return render_template('index.html',
+    return render_template('blog.html',
                            all_posts = all_posts)
     
 @app.route('/post/<int:post_index>')
@@ -48,11 +52,10 @@ def send_email(name, email, phone, message):
         connection.login('bla@hotmail.fr','password' )
         connection.sendmail('bla@hotmail.fr', email , email_message)
 
-
-
 @app.route('/about')
 def get_about():
     return render_template('about.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

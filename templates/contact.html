@@ -1,9 +1,6 @@
 {% include 'header.html' %}
 <!-- Page Header-->
-<header
-  class="masthead"
-  style="background-image: url('{{url_for('static', filename = '/img/contact-bg.png')}}')"
->
+<header class="masthead" style="background-image: url('{{url_for('static', filename = '/img/contact-bg.png')}}')">
   <div class="container position-relative px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
@@ -40,57 +37,25 @@
           </form>
           #}
 
-          <form
-            name="sentMessage"
-            id="contactForm"
-            action="{{ url_for('get_contact') }}"
-            method="post"
-            novalidate
-          >
+          <form name="sentMessage" id="contactForm" action="{{ url_for('get_contact') }}" method="post" novalidate>
             <div class="form-floating controls">
-              <input
-                class="form-control"
-                name="name"
-                id="name"
-                type="text"
-                placeholder="Enter your name..."
-                required
-                data-validation-required-message="Please enter your name."
-              />
+              <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name..." required
+                data-validation-required-message="Please enter your name." />
               <label for="name">Name</label>
             </div>
             <div class="form-floating">
-              <input
-                class="form-control"
-                name="email"
-                id="email"
-                type="email"
-                placeholder="Enter your email..."
-                required
-                data-validation-required-message="Please enter your email address."
-              />
+              <input class="form-control" name="email" id="email" type="email" placeholder="Enter your email..."
+                required data-validation-required-message="Please enter your email address." />
               <label for="email">Email address</label>
             </div>
             <div class="form-floating">
-              <input
-                class="form-control"
-                name="phone"
-                id="phone"
-                type="tel"
-                placeholder="Enter your phone number..."
-                required
-                data-validation-required-message="Please enter your phone number."
-              />
+              <input class="form-control" name="phone" id="phone" type="tel" placeholder="Enter your phone number..."
+                required data-validation-required-message="Please enter your phone number." />
               <label for="phone">Phone Number</label>
             </div>
             <div class="form-floating">
-              <textarea
-                class="form-control"
-                name="message"
-                id="message"
-                placeholder="Enter your message here..."
-                style="height: 12rem"
-              ></textarea>
+              <textarea class="form-control" name="message" id="message" placeholder="Enter your message here..."
+                style="height: 12rem"></textarea>
               <label for="message">Message</label>
             </div>
             <br />
@@ -104,9 +69,8 @@
                 <div class="fw-bolder">Form submission successful!</div>
                 To activate this form, sign up at
                 <br />
-                <a href="https://startbootstrap.com/solution/contact-forms"
-                  >https://startbootstrap.com/solution/contact-forms</a
-                >
+                <a
+                  href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
               </div>
             </div>
             <!-- Submit error message-->
@@ -119,11 +83,7 @@
               </div>
             </div>
             <!-- ********* Submit Button-->
-            <button
-              class="btn btn-primary text-uppercase"
-              id="submitButton"
-              type="submit"
-            >
+            <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">
               Send
             </button>
           </form>

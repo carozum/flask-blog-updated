@@ -1,0 +1,222 @@
+/* STEP 4. select a graphic chart in colorHunt.co */
+
+/* STEP 5. prevent all the predefined styles regarding margin top and left! so that the web site is align in the top left corner */
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #40514e;
+  }
+  h1 {
+    font-size: 5.625rem;
+    margin: 13vh auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    color: #66bfbf;
+  }
+  h2 {
+    color: #66bfbf;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  h3 {
+    font-family: 'Merriweather Sans', 'Montserrat', sans-serif;
+    color: #11999e;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-stretch: condensed;
+  }
+  a {
+    color: #11999e;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+  }
+  a:hover {
+    color: #eaf6f6;
+  }
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+  hr {
+    width: 70px;
+    height: 0;
+    border-style: none;
+    border-top: 8px dotted #eaf6f6;
+  }
+  .top-container {
+    background-color: #e4f9f5;
+    padding-top: 8vh;
+    position: relative;
+    width: 100vw;
+    height: 92vh;
+  }
+  .top-cloud {
+    position: absolute;
+    /* relative to the parent (with relative position) */
+    right: 13vw;
+    top: 7vh;
+    width: 17vw;
+  }
+  .bottom-cloud {
+    position: absolute;
+    /* relative to the parent (with relative position) */
+    left: 10vw;
+    top: 52vh;
+    width: 17vw;
+  }
+  .trees {
+    width: 45vh;
+    margin-top: 10vh;
+  }
+  
+  /* *************** middle container ***************** */
+  
+  .middle-container {
+    padding: 20px auto 30px auto;
+    line-height: 2;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .profile {
+    margin: 20px auto;
+    width: 60%;
+    padding-bottom: 40px;
+  }
+  .profile img {
+    width: 160px;
+    margin-bottom: 10px;
+  }
+  .skills {
+    padding-top: 40px;
+  }
+  .skill-row {
+    width: 60%;
+    margin: 70px auto 90px auto;
+    text-align: left;
+    line-height: 2;
+  }
+  .programming-img {
+    width: 160px;
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .python-img {
+    width: 160px;
+    float: right;
+    margin-left: 30px;
+  }
+  .contact-me {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 60%;
+    margin: auto;
+  }
+  .clear {
+    clear: both;
+  }
+  /* .btn {
+    display: inline-block;
+    background-color: #11999e;
+    color: #e4f9f5;
+    font-weight: lighter;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-decoration: none;
+  } */
+  
+  /* https://cssbuttoncreator.com/ */
+  
+  .btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -webkit-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    height: 7px;
+    line-height: 12px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    width: 130px;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 18px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -webkit-gradient(to bottom, #30e3cb, #2bc4ad);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  /* ******************** bottom container **************** */
+  .bottom-container {
+    line-height: 2;
+    padding-top: 30px;
+    background-color: #66bfbf;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: #11999e;
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+  }
+  .copyright {
+    color: #eaf6f6;
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.75rem;
+  }
+  /* .bottom-container a:hover {
+    background: none;
+    color: #e4f9f5;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+    line-height: 0.75em;
+    background-color: #11999e;
+  } */
+  
+  @media (max-width: 800px) {
+    .skill-row {
+      width: 70%;
+      margin: 70px auto 90px auto;
+      text-align: center;
+      line-height: 2;
+    }
+    .programming-img {
+      width: 140px;
+      float: none;
+      margin-right: 0;
+    }
+  
+    .python-img {
+      width: 140px;
+      float: none;
+      margin-right: 0;
+    }
+  }
+  
