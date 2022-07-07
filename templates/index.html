@@ -1,45 +1,117 @@
-{% include 'header.html' %}
-<!-- Page Header-->
-<header class="masthead" style="background-image: url({{url_for('static', filename = '/img/home-bg.png')}})">
-    <div class="container position-relative px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <div class="site-heading">
-                    <h1>Carozum's Blog</h1>
-                    <span class="subheading">A collection of information on Python and its environment</span>
+<!-- 1. create boiler plate -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caroline Zumbiehl</title>
+    <link rel="stylesheet" href="../static/styles-index.css" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+
+    <!-- 2. favicon.cc -->
+    <link rel="icon" href="../static/faviconCZUM.ico" />
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 3. structure the html -->
+
+    <!-- top container -->
+    <div class="top-container">
+        <img class="top-cloud" src="../static/cloud.png" alt="a cloud" />
+        <h1>I'm Caroline.</h1>
+        <h2>a <u>python</u> <u>pro</u>grammer.</h2>
+        <img class="bottom-cloud" src="../static/cloud.png" alt="cloud" />
+        <img class="trees" src="../static/woodland.png" alt="trees" />
+    </div>
+
+    <!-- middle container -->
+    <div class="middle-container">
+        <div class="profile">
+            <img src="../static/woman.png" alt="a woman" />
+            <h2>Hello.</h2>
+            <p>
+                Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna.
+                Non auctor, montes nulla distinctio.
+            </p>
+        </div>
+        <hr />
+
+        <div class="skills">
+            <h2>My Skills.</h2>
+            <div class="skill-row">
+                <img class="programming-img" src="../static/programming.png" alt="web development" />
+                <div class="programming-text">
+                    <h3>Web development</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+                        Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit
+                        nam, lectus ante.
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-</header>
-<!-- Main Content-->
-<div class="container px-4 px-lg-5">
-    <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-7">
-            <!-- Post preview-->
-            {% for post in all_posts: %}
 
-            <div class="post-preview">
-                <a href="{{ url_for('get_post', post_index = post.id)}}">
-                    <h2 class="post-title">{{ post.title}}</h2>
-                    <h3 class="post-subtitle">{{ post.subtitle}}</h3>
-                </a>
-                <p class="post-meta">
-                    Posted by
-                    <a href="#!">{{ post.author }}</a>
-                    on {{ post.date }}
+            <div class="skill-row">
+                <img class="python-img" src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="python" />
+                <h3>Python</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
+                    bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
+                    eu, rutrum nam.
                 </p>
             </div>
-            <!-- Divider-->
-            <hr class="my-4" />
+        </div>
+        <hr />
+        <div class="clear"></div>
 
-            {% endfor %}
+        <!-- projects -->
 
-            <!-- Pager-->
-            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older
-                    Posts →</a></div>
+        <div class="nav-container" style="padding: 50px 0;">
+            <h2>Some projects.</h2>
+            <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+            <p>
+                Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales,
+                tellus donec dui, ornare erat.
+            </p>
+
+            <a class="footer-link" href="{{ url_for('get_blog') }}">My Blog</a>
+
+            <a class="footer-link"
+                href="https://unsplash.com/@carozum?utm_source=trello&utm_medium=referral&utm_campaign=api-credit">My
+                Unsplash</a>
+
+        </div>
+
+        <hr />
+        <div class="clear"></div>
+
+        <div class="contact-me">
+            <h2>Get In Touch.</h2>
+            <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+            <p>
+                Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales,
+                tellus donec dui, ornare erat.
+            </p>
+            <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+
         </div>
     </div>
-</div>
-<!-- Footer-->
-{% include "footer.html" %}
+
+    <!-- bottom container -->
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" href="https://czumbiehlfaure.wixsite.com/toulouzumlivres">Toulouzum</a>
+        <a class="footer-link" href="https://www.appbrewery.co/">The AppBrewery</a>
+        <p class="copyright">© 2021 CaroZum.</p>
+
+    </div>
+</body>
+
+</html>
