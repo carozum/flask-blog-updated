@@ -52,9 +52,9 @@ def send_email(name, email, phone, message):
         connection.login('bla@hotmail.fr','password' )
         connection.sendmail('bla@hotmail.fr', email , email_message)
 
-@app.route('/about')
-def get_about():
-    return render_template('about.html')
+@app.route('/datas')
+def get_datas():
+    return render_template('datas.html')
 
 
 if __name__ == '__main__':
